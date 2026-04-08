@@ -7,15 +7,13 @@ void torre(int casas){
         printf("Direita → ");
         torre(casas - 1); //Recursividade para repetição do movimento da torre
     }
-    printf("\n");
 }
 
 void bispo(int casas){
 //Enquanto x não for igual a quantidade de casas esse loop se repetirá
     for(int x = 1; x <= casas; x++){
         printf("Cima, Direita ↗ "); 
-    } 
-    printf("\n");       
+    }       
 }
 
 void rainha(int casas){
@@ -25,7 +23,6 @@ void rainha(int casas){
         printf("⭠ Esquerda");
         x++;
     }
-    printf("\n");
 }
 
 void cavalo(int casas){
@@ -43,7 +40,6 @@ void cavalo(int casas){
         printf(" Direita → \n");
     }
     cavalo(casas - 1);
-    printf("\n");
     }
 
     }
@@ -54,7 +50,7 @@ void MenuInterativo(){
     int opcao;
 
 do{
-    printf("\n------------------Opções------------------\n");
+    printf("\n\n------------------Opções------------------\n");
     printf("[1] TORRE \n");
     printf("[2] BISPO \n");
     printf("[3] RAINHA \n");
@@ -69,7 +65,7 @@ do{
     case 1:
 
         int num1;
-        printf("Digite quantas vezes você andará( ♜ ♖ ): ");
+        printf("\nDigite quantas vezes você andará( ♜ ♖ ): ");
         scanf("%d", &num1);
         torre(num1);
         
@@ -78,7 +74,7 @@ do{
     case 2:
     
         int num2;
-        printf("Digite quantas vezes você andará( ♝ ♗ ): ");
+        printf("\nDigite quantas vezes você andará( ♝ ♗ ): ");
         scanf("%d", &num2);
         bispo(num2);
         
@@ -87,7 +83,7 @@ do{
     case 3:
     
         int num3;
-        printf("Digite quantas vezes você andará( ♛ ♕ ): ");
+        printf("\nDigite quantas vezes você andará( ♛ ♕ ): ");
         scanf("%d", &num3);
         rainha(num3);
         
@@ -96,7 +92,7 @@ do{
     case 4:
     
         int num4;
-        printf("Digite quantas vezes você andará( ♞ ♘ ): ");
+        printf("\nDigite quantas vezes você andará( ♞ ♘ ): ");
         scanf("%d", &num4);
         cavalo(num4);
         
